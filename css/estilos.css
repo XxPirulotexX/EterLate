@@ -276,3 +276,98 @@ section p {
   font-size: 0.9rem;
   color: #ccc;
 }
+
+@media (max-width: 1024px) {
+  .producto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .descripcion {
+    max-width: 100%;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .menu-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-menu ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1, h2 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .producto {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .grid-cubos {
+    grid-template-columns: 1fr;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 1rem;
+  }
+
+  .map-container iframe {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .producto-imagen {
+    max-width: 90%;
+  }
+
+  .menu-left,
+  .main-menu ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+
+  .login-form {
+    padding: 1rem;
+  }
+}
