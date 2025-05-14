@@ -421,13 +421,12 @@ section p {
 
 /* Animación del carrusel */
 @keyframes deslizar {
-  0% {
-    transform: translateX(0); /* Empieza en la posición original */
-  }
-  100% {
-    transform: translateX(-100%); /* Desplázate completamente */
-  }
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
 }
+
 
 /* Responsividad para pantallas más pequeñas */
 @media (max-width: 768px) {
