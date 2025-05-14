@@ -4,30 +4,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iniciar Sesión - EterLate</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="icon" href="Images/Logo.jpeg" type="image/x-icon">
+  <link rel="stylesheet" href="css/login-register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-<body class="login">
-  <header>
-    <h1>Iniciar Sesión</h1>
-    <nav>
-      <ul>
+<body class="auth-body">
+  <nav class="main-menu">
+    <div class="menu-container">
+      <ul class="menu-left">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="login.html">Iniciar Sesión</a></li>
       </ul>
-    </nav>
+      <div class="menu-right">
+        <a href="carrito.html" class="cart-icon" title="Carrito">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header class="auth-header">
+    <img src="Images/Logo.jpeg" alt="Logo de EterLate" class="auth-logo">
+    <h1>EterLate</h1>
+    <p>Bienvenido a tu espacio saludable</p>
   </header>
-  <main>
-    <form class="login-form">
-      <label for="usuario">Usuario:</label>
-      <input type="text" id="usuario" name="usuario" required />
-      <label for="clave">Contraseña:</label>
-      <input type="password" id="clave" name="clave" required />
-      <button type="submit">Entrar</button>
-    </form>
+
+  <main class="auth-container">
+    <section class="auth-card">
+      <h2>Iniciar Sesión</h2>
+      <form class="auth-form">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required />
+
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" required />
+
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <section class="auth-card">
+      <h2>Registrarse</h2>
+      <form class="auth-form">
+        <label for="nuevoUsuario">Nuevo Usuario:</label>
+        <input type="text" id="nuevoUsuario" name="nuevoUsuario" required />
+
+        <label for="nuevaClave">Contraseña:</label>
+        <input type="password" id="nuevaClave" name="nuevaClave" required />
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
   </main>
-  <footer>
-    <p>&copy; 2025 EterLate</p>
-  </footer>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section contacto">
+        <h3>Contacto</h3>
+        <p>Email: folarte@ucundinamarca.edu.co </p>
+        <p>Email: dalquichides@ucundinamarca.edu.co</p>
+      </div>
+      
+      <div class="footer-section ubicacion">
+        <h3>Ubicación</h3>
+        <p>
+          <a href="https://www.google.com/maps/place/Diagonal+9+%23595,+Soacha,+Cundinamarca,+Colombia" target="_blank" rel="noopener noreferrer" style="color: #ffd700; text-decoration: underline;">
+            Diagonal 9 #595, Soacha, Cundinamarca, Colombia
+          </a>
+        </p>
+  
+        <!-- Mapa embebido -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.0172760879563!2d-74.2157512242049!3d4.585939742794314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fbd13cb4ceaa5%3A0x33ab8dc659014162!2sCl.%209%20%23595%2C%20Soacha%2C%20Cundinamarca%2C%20Colombia!5e0!3m2!1ses-419!2sco!4v1715714906269!5m2!1ses-419!2sco" 
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 10px; margin-top: 10px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EterLate. Todos los derechos reservados.</p>
+    </div>
+  </footer> 
 </body>
 </html>

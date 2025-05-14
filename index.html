@@ -1,36 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EterLate - Inicio</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EterLate - Chocolates Saludables</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Favicon para la pestaña -->
+  <link rel="icon" href="Images/Logo.jpeg" type="image/x-icon">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-<body class="inicio">
-  <header>
-    <h1>EterLate</h1>
-    <nav>
-      <ul>
+<body>
+  <nav class="main-menu">
+    <div class="menu-container">
+      <ul class="menu-left">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="login.html">Iniciar Sesión</a></li>
       </ul>
-    </nav>
+      <div class="menu-right">
+        <a href="carrito.html" class="cart-icon" title="Carrito">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <!-- Logo de la empresa -->
+    <img src="Images/Logo.jpeg" alt="Logo de EterLate" class="logo-header" />
+    <h1>EterLate</h1>
+    <p>Endulzando nuestra vida sin mermar nuestra salud</p>
   </header>
+  <nav>
+    <ul>
+      <li><a href="#mision">Misión</a></li>
+      <li><a href="#vision">Visión</a></li>
+      <li><a href="#politicas">Políticas</a></li>
+      <li><a href="#objetivos">Objetivos</a></li>
+      <li><a href="#valores">Valores</a></li>
+    </ul>
+  </nav>
+  
   <main>
-    <section class="presentacion">
-      <h2>Endulzando nuestra vida sin mermar nuestra salud</h2>
-      <p>Chocolates saludables, deliciosos y funcionales, libres de azúcar.</p>
+    <section id="mision" class="presentacion">
+      <h2>Misión</h2>
+      <p>En EterLate transformamos el placer del chocolate en una experiencia saludable, deliciosa y accesible para todos, especialmente para quienes viven con diabetes. Nuestra misión es endulzar la vida con productos innovadores, libres de azúcar, que cuidan el cuerpo sin olvidar el sabor. Creamos chocolates únicos, con ingredientes funcionales como la stevia y el colágeno, para que disfrutar también sea parte del bienestar.</p>
     </section>
-    <section class="info">
-      <h3>Misión</h3>
-      <p>En EterLate transformamos el placer del chocolate en una experiencia saludable...</p>
-      <h3>Visión</h3>
-      <p>Consolidarnos como la marca líder en chocolates saludables en Colombia...</p>
+    <section id="vision" class="info">
+      <h2>Visión</h2>
+      <p>Consolidarnos como la marca líder en chocolates saludables en Colombia, ofreciendo alternativas deliciosas y funcionales para personas con diabetes y quienes buscan un estilo de vida más consciente. En EterLate creemos que cuidarse no debe ser un sacrificio, por eso trabajamos para educar, inspirar y transformar la forma en que las personas se relacionan con lo dulce, promoviendo el bienestar desde el sabor, la inclusión y el amor por lo natural.</p>
+    </section>
+    <section id="politicas" class="producto">
+      <h2>Políticas</h2>
+      <div class="grid-cubos">
+        <div class="cubo">Política de Calidad: Nos comprometemos a ofrecer chocolates elaborados con ingredientes de alta calidad, cuidadosamente seleccionados, libres de azúcar refinada y con endulzantes naturales como la stevia.</div>
+        <div class="cubo">Política de Salud y Bienestar: Diseñamos nuestros productos pensando en las personas con necesidades especiales como la diabetes, sin descuidar a quienes buscan alternativas saludables.</div>
+        <div class="cubo">Política de Atención al Cliente: Escuchamos, respetamos y valoramos a nuestros clientes. Nos comprometemos a brindar un servicio cercano, amable y efectivo.</div>
+        <div class="cubo">Política de Impacto Social: Trabajamos para generar conciencia sobre la importancia de una alimentación saludable, especialmente en comunidades afectadas por la diabetes.</div>
+        <div class="cubo">Política de Sostenibilidad: Usamos empaques responsables y fomentamos prácticas de producción que respeten el medio ambiente.</div>
+        <div class="cubo">Política de Inclusión: Promovemos la diversidad, la inclusión y la igualdad de oportunidades.</div>
+      </div>
+    </section>
+    <section id="objetivos" class="info">
+      <h2>Objetivos</h2>
+      <div class="grid-cubos">
+        <div class="cubo">Objetivo General: Posicionar a EterLate como la marca líder de chocolates saludables en Colombia.</div>
+        <div class="cubo">Objetivo Específico: Fortalecer nuestra presencia en redes sociales.</div>
+        <div class="cubo">Objetivo Específico: Consolidar puntos de venta estratégicos.</div>
+        <div class="cubo">Objetivo Específico: Establecer alianzas con profesionales de la salud.</div>
+      </div>
+    </section>
+    <section id="valores" class="producto">
+      <h2>Valores</h2>
+      <div class="grid-cubos">
+        <div class="cubo">Salud y Bienestar</div>
+        <div class="cubo">Empatía</div>
+        <div class="cubo">Calidad</div>
+        <div class="cubo">Confianza</div>
+        <div class="cubo">Innovación</div>
+        <div class="cubo">Compromiso Social</div>
+        <div class="cubo">Sostenibilidad</div>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 EterLate. Todos los derechos reservados.</p>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section contacto">
+        <h3>Contacto</h3>
+        <p>Email: folarte@ucundinamarca.edu.co </p>
+        <p>Email: dalquichides@ucundinamarca.edu.co</p>
+      </div>
+      
+      <div class="footer-section ubicacion">
+        <h3>Ubicación</h3>
+        <!-- Dirección visible y clickeable -->
+        <p>
+          <a href="https://www.google.com/maps/place/Diagonal+9+%23595,+Soacha,+Cundinamarca,+Colombia" target="_blank" rel="noopener noreferrer" style="color: #ffd700; text-decoration: underline;">
+            Diagonal 9 #595, Soacha, Cundinamarca, Colombia
+          </a>
+        </p>
+
+        <!-- Mapa embebido -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.0172760879563!2d-74.2157512242049!3d4.585939742794314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fbd13cb4ceaa5%3A0x33ab8dc659014162!2sCl.%209%20%23595%2C%20Soacha%2C%20Cundinamarca%2C%20Colombia!5e0!3m2!1ses-419!2sco!4v1715714906269!5m2!1ses-419!2sco" 
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 10px; margin-top: 10px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EterLate. Todos los derechos reservados.</p>
+    </div>
   </footer>
 </body>
-</html>
+</html>   

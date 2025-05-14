@@ -1,0 +1,181 @@
+body.auth-body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fef8f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .auth-header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #3e2723;
+    color: white;
+  }
+  
+  .auth-logo {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .auth-card {
+    background-color: #fffaf0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .auth-card h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #5d4037;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form label {
+    margin-bottom: 0.5rem;
+    color: #4e342e;
+  }
+  
+  .auth-form input {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-form button {
+    padding: 0.6rem;
+    background-color: #795548;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-form button:hover {
+    background-color: #5d4037;
+  }
+  
+  .auth-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3e2723;
+    color: white;
+  }
+
+  /* Estilo para el menú superior */
+.main-menu {
+    background-color: #4e342e;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-menu ul li {
+    display: inline;
+    margin-right: 2rem;
+  }
+  
+  .main-menu ul li a {
+    color: #fbeec1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .main-menu ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-left {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon {
+    color: #fbeec1;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .cart-icon:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+  }
+
+  .site-footer {
+    background-color: #3e2723;
+    color: #fbeec1;
+    padding: 2rem 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    margin: 1rem;
+  }
+  
+  .footer-section h3 {
+    color: #ffd700;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    width: 100%;
+    height: 200px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
