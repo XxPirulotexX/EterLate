@@ -371,3 +371,71 @@ section p {
     padding: 1rem;
   }
 }
+
+/* Carrusel de procesos */
+.carrusel {
+  padding: 2rem 1rem;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.carrusel-titulo {
+  font-size: 2rem;
+  color: #3e2723;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.carrusel-contenedor {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: auto;
+  max-height: 400px; /* Limita la altura máxima */
+}
+
+.carrusel-slide {
+  display: flex;
+  animation: deslizar 50s infinite linear;
+  width: fit-content;
+}
+
+.carrusel-slide img {
+  width: 100vw;           /* Ocupa solo el ancho de la pantalla */
+  height: auto;           /* Mantiene proporción */
+  object-fit: cover;
+  flex: 0 0 100vw;        /* Asegura que una imagen ocupe una “pantalla” completa */
+  max-height: 400px;      /* Evita que se vean gigantes en escritorio */
+  border-radius: 10px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carrusel-slide img {
+    max-height: 250px;
+  }
+}
+
+/* Animación del carrusel */
+@keyframes deslizar {
+  0% {
+    transform: translateX(0); /* Empieza en la posición original */
+  }
+  100% {
+    transform: translateX(-100%); /* Desplázate completamente */
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carrusel-titulo {
+    font-size: 1.5rem;
+  }
+
+  .carrusel-slide img {
+    height: auto;
+  }
+}
