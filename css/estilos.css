@@ -429,13 +429,23 @@ section p {
   }
 }
 
-/* Responsivo */
+/* Responsividad para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .carrusel-titulo {
+  .carousel-item {
+    min-width: 100%;
+  }
+
+  .carousel-image {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel h2 {
     font-size: 1.5rem;
   }
 
-  .carrusel-slide img {
-    height: auto;
+  .carousel-item {
+    min-width: 100%;
   }
 }
