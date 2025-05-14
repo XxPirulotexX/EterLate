@@ -1,0 +1,59 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #3e2723, #000000);
+  color: #fbeec1;
+}
+header {
+  background: #4e342e;
+  padding: 1rem;
+  text-align: center;
+}
+header h1 {
+  color: #ffd700;
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  color: #fbeec1;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  padding: 2rem;
+}
+.presentacion, .info, .producto, .login-form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.login-form button {
+  background: #ffd700;
+  border: none;
+  padding: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3e2723;
+}
